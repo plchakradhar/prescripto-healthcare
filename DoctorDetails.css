@@ -1,0 +1,211 @@
+.doctor-profile-container {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .doctor-header {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .doctor-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 20px;
+    background-color: #e0f2f7; /* Placeholder background if image loads slowly */
+  }
+  
+  .doctor-details {
+    flex-grow: 1;
+  }
+  
+  .doctor-name {
+    font-size: 1.8em;
+    color: #1e88e5; /* Primary blue color */
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .verified-badge {
+    color: #fff;
+    background-color: #1e88e5;
+    border-radius: 50%;
+    font-size: 0.8em;
+    padding: 2px 5px;
+    margin-left: 8px;
+  }
+  
+  .doctor-specialty {
+    color: #777;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  .experience {
+    color: #fff;
+    background-color: #81d4fa; /* Light blue for experience */
+    border-radius: 4px;
+    font-size: 0.8em;
+    padding: 2px 5px;
+    margin-left: 8px;
+  }
+  
+  .about-doctor {
+    margin-bottom: 15px;
+  }
+  
+  .about-title {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .info-icon {
+    color: #1e88e5;
+    font-size: 1em;
+    margin-left: 5px;
+  }
+  
+  .about-text {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .appointment-fee {
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  .fee {
+    font-weight: bold;
+    color: #4caf50; /* Green for fee */
+  }
+  
+  .booking-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .booking-title {
+    font-size: 1.4em;
+    color: #91a9a8;
+    margin-bottom: 15px;
+  }
+  
+  .slots-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+  .slot {
+    border: 1px solid #d3d3d3;
+    border-radius: 20px;
+    padding: 10px 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .slot.active {
+    background-color: #1e88e5; /* Green for active slot */
+    color: #fff;
+    border-color: #1e88e5;
+  }
+  
+  .slot:hover {
+    background-color: #e0f7fa;
+    color: #000;
+  }
+  
+  .day {
+    font-size: 0.9em;
+    color: #242424;
+  }
+  
+  .date {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .timings-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .timing {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .timing.active {
+    background-color: #1e88e5; /* Blue for active timing */
+    color: #fff;
+    border-color: #1e88e5;
+  }
+  
+  .timing:disabled {
+    background-color: #e0e0e0;
+    color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  .timing:hover:not(:disabled) {
+    background-color: #e0f7fa;
+    color: #000;
+  }
+  
+  .book-appointment-button {
+    background-color: #1b6bb0;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-appointment-button:hover {
+    background-color: #1565c0;
+  }
+  
+  .book-appointment-button:disabled {
+    background-color: #e0e0e0;
+    color: #aaa;
+    cursor: not-allowed;
+  }

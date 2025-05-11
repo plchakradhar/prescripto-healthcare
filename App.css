@@ -1,0 +1,354 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header */
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+  font-size: 24px;
+  color: #007acc;
+  font-weight: bold;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #007acc;
+}
+
+.create-account {
+  border-radius: 5px;
+  background-color: #007acc;
+  color: #ffffff;
+  border: none;
+  width: 160px;
+  height: 40px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.create-account:hover {
+  background-color: #005fa3;
+}
+
+/* Hero Section */
+.bluescreen {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1400px;
+  height: 500px;
+  background-color: #4a90e2;
+  color: #ffffff;
+}
+
+.bluescreen-content {
+  width: 100%;
+  max-width: 500px;
+  margin-left: 50px;
+}
+
+.bluescreen-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.bluescreen-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.book-appointment {
+  margin-top: 10px;
+  background-color: #ffffff;
+  color: #4a90e2;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.book-appointment:hover {
+  background-color: #4a90e2;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.bluescreen-images {
+  display: flex;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.bluescreen-images img {
+  width: 220px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Speciality Section */
+.speciality-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.speciality-section h2 {
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.speciality-section p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.speciality-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.speciality {
+  text-align: center;
+  width: 120px;
+}
+
+.speciality img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #f4f4f9;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.speciality p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Top Doctors Section */
+.top-doctors-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.top-doctors-section h2 {
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.top-doctors-section p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.doctor-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.doctor-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.doctor-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.doctor-card .availability {
+  font-size: 14px;
+  color: #28a745;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.doctor-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.doctor-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Widget Overlay Styles */
+.create-account-widget {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 90%;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-in-out;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -45%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.create-account-widget h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.create-account-widget p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #2c2b2b;
+}
+
+.form-group input {
+  background-color: white;
+  width: 370px;
+  padding: 10px;
+  border: 1px solid #1669ce;
+  border-radius: 4px;
+  font-size: 1em;
+  color: #000000;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .bluescreen {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .bluescreen-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  .bluescreen-images {
+    justify-content: center;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .create-account-widget {
+    padding: 15px 20px;
+  }
+
+  .create-account-widget h2 {
+    font-size: 1.5em;
+  }
+
+  .btn-primary {
+    font-size: 0.9em;
+  }
+}

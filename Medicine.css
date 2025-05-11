@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff; /* Light blue background */
+  color: #333; /* Dark text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  width: 90%;
+  max-width: 600px;
+  background: #ffffff; /* White background for the app */
+  border-radius: 16px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for a modern look */
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align all content */
+  text-align: center;
+}
+
+/* Header */
+.header {
+  background-color: #4caf50; /* Green header */
+  color: #ffffff; /* White text */
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 50px;
+  border-radius: 16px 16px 0 0; /* Rounded corners for the top */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the header */
+  width: 100%;
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Ensure text is centered */
+}
+
+.header h1 {
+  margin: 0;
+}
+
+/* Main Content */
+.main {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input Fields */
+input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #4caf50; /* Green border on focus */
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  max-width: 400px;
+  background-color: #4caf50; /* Green button */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s, box-shadow 0.2s;
+}
+
+button:hover {
+  background-color: #388e3c; /* Darker green on hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+button:active {
+  transform: scale(0.98); /* Slightly shrink on click */
+}
+
+button:disabled {
+  background-color: #cccccc; /* Gray for disabled buttons */
+  cursor: not-allowed;
+}
+
+/* Section Titles */
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #4caf50; /* Green text for section titles */
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+ul li {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f8e9; /* Light green background */
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Remove Button */
+.remove-button {
+  background-color: #f44336; /* Red button */
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  color: #ffffff; /* White text */
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.remove-button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Pharmacy List */
+.pharmacy-list {
+  margin: 20px 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+.pharmacy-list ul li {
+  background-color: #e3f2fd; /* Light blue background */
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.pharmacy-list ul li label {
+  margin-left: 10px;
+  font-size: 1rem;
+  color: #333; /* Dark text color */
+}
+
+/* Radio Buttons */
+.radio-button {
+  margin-right: 10px;
+}
+
+/* Checkout Section */
+.checkout input {
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.checkout button {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Cart Section */
+.cart {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.cart ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f8e9; /* Light green background */
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #666; /* Light gray text */
+}  
